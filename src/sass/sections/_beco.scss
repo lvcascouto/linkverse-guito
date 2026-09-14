@@ -21,7 +21,7 @@ $padding-link-beco:        token.$space-8 0;
 $color-link-beco:          inherit;
 $transition-link-beco:     token.$duration-200 token.$ease-standard;
 $padding-link-hover-beco:  token.$space-8;
-$color-link-hover-beco:    token.$color-accent;
+$color-link-hover-beco:    $color-text-primary;
 $color-link-active-beco:   fn.color-dark(token.$color-accent, 25%);
 
 // ---------------------------------------------------
