@@ -6,6 +6,21 @@
 // AXIS — FOOTER (Section)
 // ===================================================
 
+@keyframes fade-in-badge {
+  0% {
+    opacity: token.$opacity-0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: token.$opacity-100;
+    transform: translateY(0);
+  }
+}
+
+@keyframes enable-click {
+  to { pointer-events: auto; }
+}
+
 footer {
   @include mix.flex($justify: center);
   z-index: fn.z(content);
@@ -17,21 +32,9 @@ footer {
 
   @supports (animation-timeline: scroll()) {
     opacity: token.$opacity-0;
-    animation: fade-in-badge linear forwards;
-    animation-timeline: scroll();
-    animation-range: 0 30vh;
-  }
-}
-
-@keyframes fade-in-badge {
-  0% {
-    opacity: token.$opacity-0;
-    transform: translateY(15px);
     pointer-events: none;
-  }
-  100% {
-    opacity: token.$opacity-100;
-    transform: translateY(0);
-    pointer-events: auto;
+    animation: fade-in-badge linear forwards, enable-click linear forwards;
+    animation-timeline: scroll(), scroll();
+    animation-range: 0 30vh, 25vh 30vh;
   }
 }

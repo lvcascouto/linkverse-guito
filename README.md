@@ -51,7 +51,7 @@ A implementação utiliza a arquitetura **[AXIS](https://github.com/lvcascouto/a
 | HTML5           | Estrutura semântica com meta tags de SEO e Open Graph     |
 | Sass (SCSS)     | Arquitetura AXIS e organização dos design tokens          |
 | JavaScript ES6+ | Inicialização e controle das interações da interface      |
-| Swiper.js       | Carrossel de lançamentos com suporte a toque e teclado    |
+| CSS nativo      | Carrossel de lançamentos com suporte a toque e teclado    |
 | Vite            | Bundling, minificação e gestão de assets                  |
 | AXIS            | Arquitetura Sass utilizada como fundação do projeto       |
 | Vercel          | Deploy e hospedagem da aplicação                          |
